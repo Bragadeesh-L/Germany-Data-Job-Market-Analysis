@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 
-input_path = "data/raw/data_jobs.csv" 
-output_path = "data/processed/jobs_transformed.csv"
+input_path = "Germany-Data-Job-Market-Analysis/data/raw/data_jobs.csv"
+output_path = "Germany-Data-Job-Market-Analysis/data/processed/jobs_transformed.csv"
 
 
 def transform_data():
