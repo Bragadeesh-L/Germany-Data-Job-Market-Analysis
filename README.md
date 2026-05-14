@@ -22,15 +22,15 @@ https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs
 
 #Project Structure
 
-data_extraction.py: extracts raw job data from the API and stores it as a CSV file
+- data_extraction.py: extracts raw job data from the API and stores it as a CSV file
 
-transformation.py: performs preprocessing and transformation on the extracted dataset
+- transformation.py: performs preprocessing and transformation on the extracted dataset
 
-Data_jobs.csv: raw extracted dataset
+- Data_jobs.csv: raw extracted dataset
 
-jobs_transformed.csv: cleaned dataset used for Tableau visualization
+- jobs_transformed.csv: cleaned dataset used for Tableau visualization
 
-germany_jobs_dashboard.png: dashboard screenshot generated using Tableau
+- germany_jobs_dashboard.png: dashboard screenshot generated using Tableau
 
 #Extraction
 
