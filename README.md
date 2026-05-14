@@ -26,7 +26,7 @@ https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs
 
 - transformation.py: performs preprocessing and transformation on the extracted dataset
 
-- Data_jobs.csv: raw extracted dataset
+- data_jobs.csv: raw extracted dataset
 
 - jobs_transformed.csv: cleaned dataset used for Tableau visualization
 
