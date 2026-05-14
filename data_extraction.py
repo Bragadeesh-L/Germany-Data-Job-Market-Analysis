@@ -7,7 +7,7 @@ import os
 url = "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs"
 
 #CSV output location
-output_path = "data/raw/data_jobs.csv"
+output_path = "Germany-Data-Job-Market-Analysis/data/raw/data_jobs.csv"
 
 #Request headers
 headers = {
