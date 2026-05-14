@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 
-data_jobs_path = "data/raw/data_jobs.csv"
-output_path = "data/processed/jobs_transformed.csv"
+data_jobs_path = "C:\\Users\\Tuf\\Desktop\\Germany MS\\Project\\data\\data_jobs.csv"
+output_path = "C:\\Users\\Tuf\\Desktop\\Germany MS\\Project\\data\\jobs_transformed.csv"
 
 
 def transform_data():
@@ -16,7 +16,7 @@ def transform_data():
     #Split city column into city and region
     split_cols = df["city"].str.split(",", expand=True)
 
-    df["derv_city"] = split_cols[0].str.strip()
+    df["city_clean"] = split_cols[0].str.strip()
 
     if split_cols.shape[1] > 1:
         df["region"] = split_cols[1].str.strip()
@@ -30,11 +30,11 @@ def transform_data():
     #Clean text fields
     df["role"] = df["role"].str.title()
     df["title"] = df["title"].str.strip()
-    df["derv_city"] = df["derv_city"].str.title()
+    df["city_clean"] = df["city_clean"].str.title()
     df["company"] = df["company"].str.strip()
 
     #Remove records with null values in specified columns
-    df = df.dropna(subset=["title", "company", "derv_city"])
+    df = df.dropna(subset=["title", "company", "city_clean"])
 
     #Add derived fields
     df["country"] = "Germany"
