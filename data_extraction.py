@@ -83,7 +83,7 @@ def fetch_jobs():
 
             jobs = data.get("stellenangebote", [])
 
-            #Stop if no more jobs available
+            #Stop if no more jobs are available
             if not jobs:
                 break
 
