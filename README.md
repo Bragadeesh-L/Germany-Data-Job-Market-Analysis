@@ -6,21 +6,21 @@ This project was built to analyze Germany-based data job postings using API extr
 
 API Extraction -> Data Cleaning -> Feature Engineering -> CSV Output -> Tableau Dashboard
 
-#Tools Used
+## Tools Used
 
 - Python
 - Python Pandas
 - Tableau
 - REST API
 
-#Data Source
+## Data Source
 
 The data was collected using the German Federal Employment Agency Job Search API.
 
 API Endpoint:
 https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs
 
-#Project Structure
+## Project Structure
 
 - data_extraction.py: extracts raw job data from the API and stores it as a CSV file
 
@@ -32,7 +32,7 @@ https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs
 
 - germany_jobs_dashboard.png: dashboard screenshot generated using Tableau
 
-#Extraction
+## Extraction
 
 The extraction script fetches job postings for roles such as:
 
@@ -44,7 +44,7 @@ The extraction script fetches job postings for roles such as:
 
 The script also handles pagination, duplicate removal, failed requests, and JSON validation before storing the extracted records as a raw CSV dataset.
 
-#Transformation
+## Transformation
 
 The transformation script performs basic preprocessing and cleaning tasks including:
 
@@ -56,7 +56,7 @@ The transformation script performs basic preprocessing and cleaning tasks includ
 
 The cleaned dataset is then exported as a processed CSV file which is later connected to Tableau.
 
-#Dashboard
+## Dashboard
 
 The Tableau dashboard was built to analyze:
 
