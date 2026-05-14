@@ -2,7 +2,7 @@
 
 This project was built to analyze Germany-based data job postings using API extraction, Python-based data processing, and Tableau dashboard visualization. The main idea behind the project was to understand hiring trends, popular roles, and location-wise demand across different data-related jobs in Germany.
 
-# Workflow
+## Workflow
 
 API Extraction -> Data Cleaning -> Feature Engineering -> CSV Output -> Tableau Dashboard
 
